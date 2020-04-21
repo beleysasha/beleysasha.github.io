@@ -1,0 +1,585 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #202020
+}
+.container{
+		height: 300vh;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 6.3fr 5fr 5fr 6fr 3.5fr 4fr 0.5fr;
+	grid-template-columns: 1fr;
+}
+.gallery{
+	grid-row: 4/5;
+	grid-column: 1/2;
+	background: white;
+	border-bottom: 1px solid black;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 0.5fr;
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+
+.flip-card1 {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: transparent;
+	perspective: 1000px;
+	grid-row: 2/4;
+	grid-column: 2/3;
+
+}
+.flip-card2 {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: transparent;
+	perspective: 1000px;
+	grid-row: 2/4;
+	grid-column: 3/4;
+}
+.flip-card3 {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: transparent;
+	perspective: 1000px;
+	grid-row: 2/4;
+	grid-column: 4/5;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card1:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card2:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card3:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: white;
+}
+
+.flip-card-front {
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flip-card-back {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	transform: rotateY(180deg);
+
+}
+
+
+.y{
+	grid-row: 1/2;
+	grid-column: 3/4;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.header{
+	background:#333333;
+	grid-row: 1/2;
+	grid-column: 1/2;
+	display:grid;
+	grid-template-rows: 0.5fr 1fr;
+	grid-template-columns: 1fr;
+
+}
+.bl{
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+.menu{
+	grid-row: 1/2;
+	grid-column: 1/2;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo{
+	font-family: 'Sofia';
+	font-size: 1.5vw;
+	color: white;
+}
+.a{
+	width: 40%;
+	text-align: center;
+}
+.b{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+#particles-js {
+	position: absolute;
+	width: 88%;
+	height: 50%;
+	margin: 0 auto;
+	padding: 0;}
+
+	.content{
+		grid-row: 2/3;
+		grid-column: 1/2;
+		background: white;
+	}
+	.navi{
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		grid-row: 3/4;
+		grid-column: 1/2;
+		display: grid;
+		grid-template-rows: 0.25fr 1fr 0.15fr;
+		grid-template-columns: 1.5fr 1.2fr 0.1fr;
+		background: white;
+	}
+	.pro{
+		grid-row: 1/2;
+		grid-column: 1/3;
+		display:flex;
+		justify-content: center;
+		margin-left: 1vw;
+
+	}
+	.project1{
+		grid-row: 2/3;
+		grid-column: 1/2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.proj{
+		font-family: 'Sofia';
+		font-size: 2vw;
+		color: black;
+		text-align: center;
+	}
+	.project_foto{
+		grid-row: 2/3;
+		grid-column: 2/3;
+		padding: 0.5vh;
+	}
+	.eth{
+		width: 60%;
+		text-align: center;
+		font-size: 1.3vw;
+	}
+
+	.portfolio{
+		background: white;
+		border-bottom: 1px solid black;
+		grid-row: 5/6;
+		grid-column: 1/2;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 0.7fr 1fr 0.7fr
+
+	}
+	.c{
+		grid-row: 1/2;
+		grid-column: 2/3
+	}
+	.b13{
+		grid-row: 2/3;
+		grid-column: 2/3;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;}
+		.g{
+			color: black;
+			font-size: 1.5vw;
+			text-decoration: none;
+		}
+		.k{
+			text-decoration: underline;
+		}
+		.contact{
+			background: white;
+			grid-row: 6/7;
+			grid-column: 1/2;
+			display: grid;
+			grid-template-rows: 0.1fr 0.6fr 0.1fr;
+			grid-template-columns: 0.5fr 1fr 0.4fr 1fr 0.5fr;
+		}
+		.block{
+			grid-row: 1/2;
+			grid-column: 3/4;
+		}
+		.forma{
+			grid-row: 2/3;
+			grid-column: 4/5;
+			padding: 1vh;
+			display: grid;
+			grid-template-rows: 1fr 0.1fr;
+			grid-template-columns: 1fr;
+		}
+		.text{
+			grid-row: 2/3;
+			grid-column: 2/3;
+			padding: 1vh;
+			text-align: center;
+			font-size: 1.3vw;
+			display: flex;
+			align-items: center;
+		}
+		#google_translate_element{
+			width: 200px;
+			height: 50px;
+		}
+		.f1{
+			grid-row: 1/2;
+			grid-column: 1/2;
+			display: grid;
+			grid-template-rows:0.6fr 1fr 1fr 0.6fr;
+			grid-template-columns: 0.4fr 0.2fr 0.4fr 0.5fr;
+		}
+		label{
+			grid-row: 2/3;
+			grid-column: 1/4;
+		}
+		input{
+			grid-row: 3/4;
+			grid-column: 1/4;
+			border: 0;
+			border-bottom: 1px solid black
+		}
+		.f2{
+			grid-row: 2/3;
+			grid-column: 1/2;
+			display: grid;
+			grid-template-rows:0.6fr 1fr 1fr 0.6fr;
+			grid-template-columns: 0.25fr 0.5fr 0.25fr 0.5fr;
+			grid-gap: 1vh;
+
+		}
+		button{
+			height: 150%;
+			grid-row: 4/5;
+			grid-column: 2/3;
+			background: #202020;
+			color: white;
+			border: 0;
+		}
+		.img{
+			width: 100%;
+			height: 100%;
+		}
+		.footer{
+			background: white;
+			border-top: 1px solid black;
+			grid-row: 7/8;
+			grid-column: 1/2;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Sofia';
+			font-size: 1vw;
+			color: black;
+		}
+		.port{
+			font-family: 'Sofia';
+			font-size: 5vw;
+			color: white;
+			text-align: center;
+		}
+		.port2{
+			font-family: 'Sofia';
+			font-size: 2vw;
+			color: black;
+			text-align: center;
+		}
+		.ethics{
+			font-family: '';
+			font-size: 1.5vw;
+			color: black;
+			text-align: center;
+		}
+		.port1{
+			font-family: 'Amita';
+			font-size: 5vw;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			margin-bottom: 20vh;
+		}
+		#example1{
+			width: 60%;
+			margin: 0 auto;
+			font-size: 2vw;
+
+		}
+
+		.underline {
+			text-decoration: none; 
+			position: relative; 
+			font-size: 1.5vw;
+		}   
+
+		.underline:after {
+			position: absolute;
+			content: '';
+			height: 2px;
+			/* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+			bottom: -4px; 
+
+
+       /****** 
+       optional values below 
+       ******/
+
+       /* center - (optional) use with adjusting width   */
+       margin: 0 auto;
+       left: 0;
+       right: 0;
+       width: 0%;
+       background: white;
+
+       /* optional animation */
+       -o-transition:.6s;
+       -ms-transition:.6s;
+       -moz-transition:.6s;
+       -webkit-transition:.6s;
+       transition:.6s;
+   }
+
+
+   /* optional hover classes used with anmiation */
+   .underline:hover:after {
+   	width: 100%;
+   	background: white;
+   }
+   #flip{
+   	display: none;
+   	padding: 1vw;
+   	text-align: center;
+   	background-color: #333333;
+   	z-index: 100;
+   	position: relative;
+   	color: white;
+   }
+   #panel{
+   	display: none;
+   	padding: 1px;
+   	display: none;
+   	text-align: center;
+   	background-color: #333333;
+   	z-index: 10000;
+   	font-size: 4vw;
+   	color: white;
+   }
+   .m{
+   	display: none;
+   }
+   h2{
+   	font-size: 2vw;
+   	color: white;
+   }
+   .j{
+   	text-align: left;
+   	font-family: 'Sofia';
+   	margin-left: 10vw
+   }
+   .j2{
+   	text-align: right;
+   	font-family: 'Sofia';
+   	margin-right: 10vw
+
+   }
+   @media only screen and (max-width: 801px){
+   	.container{
+   		height: 20vh;
+   		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   		;grid-template-columns: 1fr;
+   	}
+   	.j, .j2{
+   		font-family: 'normal';
+   		font-size:3vw;
+   	}
+
+   	.but{
+   		grid-column: 2/3;
+   	}
+   	#example1{
+   		width: 90%;
+   		font-size: 3vw;
+   	}
+   	#particles-js{
+   		
+   	}
+   	.navi{
+   		grid-template-columns: 1fr;
+   		grid-template-rows: 0.25fr 1fr 1fr;
+   	}
+   	.bl{
+   		
+   	}
+   	.proj{
+   		font-size: 5vw;
+   	}
+   	.port2{
+   		font-size: 5vw;
+   	}
+   	.text{
+   		font-size: 3vw;
+   	}
+   	.pro{
+   		grid-row: 1/2;
+   		grid-column: 1/2;
+   	}
+   	.block{
+   		grid-row: 1/2;
+   		grid-column: 1/2;
+   	}
+   	.ethics{
+   		font-size: 4vw;
+   	}
+   	.eth{
+   		grid-row: 2/3;
+   		grid-column: 1/2;
+   		font-size: 3vw;
+   	}
+   	.project_foto{
+   		grid-row: 3/4;
+   		grid-column: 1/2;
+   		padding: 3vw;
+   	}
+   	.gallery{
+   		display: none;
+   	}
+   	.g{
+   		font-size: 3vw;
+   	}
+   	.h2{
+   		color: white;
+   		font-size: 5vw;
+   	}
+   	.b13{
+   		display: flex;
+   		justify-content: space-around;
+   	}
+   	.portfolio{
+   		background: white;
+   		border-bottom: 1px solid black;
+   		grid-row: 5/6;
+   		grid-column: 1/2;
+   		display: grid;
+   		grid-template-rows: 1fr 1fr 1fr;
+   		grid-template-columns: 0.4fr 1fr 0.4fr
+
+   	}
+   	.underline{
+   		font-size: 3vw;
+   	}
+   	.contact{
+   		background: white;
+   		grid-row: 6/7;
+   		grid-column: 1/2;
+   		display: grid;
+   		grid-template-rows: 0.6fr 1fr 0.1fr;
+   		grid-template-columns: 1fr;
+   	}
+   	.forma{
+   		grid-row: 2/3;
+   		grid-column: 1/2;
+   	}
+   	.text{
+   		grid-row: 1/2;
+   		grid-column: 1/2;
+   	}
+   	.f1{
+   		grid-row: 1/2;
+   		grid-column: 2/3;
+   		display: grid;
+   		grid-template-rows:0.6fr 1fr 1fr 0.6fr;
+   		grid-template-columns: 0.4fr 0.2fr 0.4fr 0.5fr;
+   	}
+   	.f2{
+   		grid-row: 2/3;
+   		grid-column: 2/3;
+   		display: grid;
+   		grid-template-rows:0.6fr 1fr 1fr 0.6fr;
+   		grid-template-columns: 0.4fr 0.5fr 0.5fr 0.5fr;
+   	}
+   	.h4{
+   		font-size: 5vw;
+   		font-family: 'Sofia';
+   	}
+   	.logo{
+   		font-size: 3vw;
+   	}
+   	.b{
+   		display: none;
+   	}
+
+   	#flip{
+   		display: block;
+   	}
+   	#panel{
+   		display: none;
+   	}
+   	.header{
+   		display: grid;
+   		grid-template-rows: 0.5fr 1fr 1fr;
+   		grid-template-columns:1fr 1fr 0.5fr 0.5fr;
+   		height: 30vh
+   	}
+.menu{
+	grid-row: 1/2;
+	grid-column: 1/3;
+	display: flex;
+	align-items: flex-start;
+}
+.logo{
+	font-size: 4vw;
+}
+   	.b2{
+   		grid-row: 2/3;
+   		grid-column: 2/3;   	}
+   	.a{
+   		grid-row: 1/2;
+   		grid-column: 1/2;
+   	}
+   	.bl{
+   		grid-row: 2/4
+   	}
+   	.m{
+   		display: block;
+   		grid-row: 1/3;
+   		grid-column: 4/5;
+   	}
+   	.port1{
+   		margin-top: 9vh
+   	}
+
+   }
