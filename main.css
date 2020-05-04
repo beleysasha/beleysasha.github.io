@@ -134,6 +134,8 @@ body{
 .a{
 	width: 40%;
 	text-align: center;
+	text-decoration:none;
+	color:white;
 }
 .b{
 	width: 60%;
