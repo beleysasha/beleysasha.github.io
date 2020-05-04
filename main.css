@@ -1,4 +1,8 @@
 
+
+html{
+scroll-behavior: smooth;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -6,9 +10,7 @@
 body{
 	background: #202020
 }
-html{
-scroll-behavior: smooth;
-}
+
 .container{
 		height: 300vh;
 	width: 90%;
